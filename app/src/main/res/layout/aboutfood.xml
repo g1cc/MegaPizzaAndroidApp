@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".AboutfoodActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/abFoodTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Название"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abFoodImage" />
+
+                <TextView
+                    android:id="@+id/abIngTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Состав"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abFoodDescription" />
+
+                <TextView
+                    android:id="@+id/abProteinSubTitle"
+                    android:layout_width="40dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="белки"
+                    android:textColor="@color/unchecked"
+                    app:layout_constraintEnd_toStartOf="@+id/abFatsSubTitle"
+                    app:layout_constraintStart_toEndOf="@+id/abEnergySubTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/abProtein" />
+
+                <TextView
+                    android:id="@+id/abFoodDescription"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Описание"
+                    android:textAlignment="center"
+                    android:textColor="@color/unchecked"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abFoodTitle" />
+
+                <TextView
+                    android:id="@+id/abFatsSubTitle"
+                    android:layout_width="38dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="жиры"
+                    android:textColor="@color/unchecked"
+                    app:layout_constraintEnd_toStartOf="@+id/abCarbonSubTitle"
+                    app:layout_constraintStart_toEndOf="@+id/abProteinSubTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/abFats" />
+
+                <ImageView
+                    android:id="@+id/abFoodImage"
+                    android:layout_width="350dp"
+                    android:layout_height="325dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/nonepizza" />
+
+                <TextView
+                    android:id="@+id/abFoodIng"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@color/unchecked"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abIngTitle" />
+
+                <TextView
+                    android:id="@+id/abFats"
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="25,5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/abCarbon"
+                    app:layout_constraintStart_toEndOf="@+id/abProtein"
+                    app:layout_constraintTop_toBottomOf="@+id/abEnergyTitle" />
+
+                <TextView
+                    android:id="@+id/abEnergySubTitle"
+                    android:layout_width="32dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginEnd="17dp"
+                    android:text="ккал"
+                    android:textColor="@color/unchecked"
+                    app:layout_constraintEnd_toStartOf="@+id/abProteinSubTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abFoodEnergy" />
+
+                <TextView
+                    android:id="@+id/abEnergyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Энергетическая ценность"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abFoodIng" />
+
+                <TextView
+                    android:id="@+id/abFoodEnergy"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="17dp"
+                    android:text="25,5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/abProtein"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abEnergyTitle" />
+
+                <TextView
+                    android:id="@+id/abCarbon"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="85dp"
+                    android:text="25,5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/abFats"
+                    app:layout_constraintTop_toBottomOf="@+id/abEnergyTitle" />
+
+                <TextView
+                    android:id="@+id/abCarbonSubTitle"
+                    android:layout_width="64dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="85dp"
+                    android:text="углеводы"
+                    android:textColor="@color/unchecked"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/abFatsSubTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/abCarbon" />
+
+                <TextView
+                    android:id="@+id/abProtein"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="25,5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/abFats"
+                    app:layout_constraintStart_toEndOf="@+id/abFoodEnergy"
+                    app:layout_constraintTop_toBottomOf="@+id/abEnergyTitle" />
+
+                <Button
+                    android:id="@+id/abAddButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="22dp"
+                    android:text="Добавить в корзину"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abFatsSubTitle"
+                    app:strokeColor="@color/black" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
